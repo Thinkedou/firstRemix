@@ -12,6 +12,22 @@ npm run dev
 
 This starts your app in development mode, rebuilding assets on file changes.
 
+## Prisma
+
+Prisma nécessite quelques opérations supplémentaires
+
+```sh
+npx prisma --initDatabase
+```
+
+Create a new .env file
+
+```sh
+npm start
+```
+
+Now you'll need to pick a host to deploy it to.
+
 ## Deployment
 
 First, build your app for production:
