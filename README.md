@@ -17,16 +17,15 @@ This starts your app in development mode, rebuilding assets on file changes.
 Prisma nécessite quelques opérations supplémentaires
 
 ```sh
-npx prisma --initDatabase
+npx prisma init --datasource-provider sqlite
+npx prisma db push
 ```
 
-Create a new .env file
+Create a new .env file for DATABASE_URL var
 
-```sh
-npm start
+```yaml
+DATABASE_URL="file:./dev.db"
 ```
-
-Now you'll need to pick a host to deploy it to.
 
 ## Deployment
 
